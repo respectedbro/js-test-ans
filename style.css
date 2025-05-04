@@ -4,6 +4,10 @@ body, html {
     padding: 0;
 }
 
+.active {
+    display: flex;
+}
+
 .true {
     background-color: green;
 }
@@ -29,11 +33,18 @@ button {
     cursor: pointer;
 }
 
-.questions {
+.test__questions {
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.questions__elem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 .questions__top {

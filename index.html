@@ -16,25 +16,44 @@
 
     <button class="test__start-btn">Начать тест</button>
 
-    <div class="questions">
+    <div class="test__questions">
         <div class="questions__counter">
             <span class="questions__count">0</span>/10
         </div>
-        <div class="questions__top">
-            <h2 class="question__title">Кто изображён перед вами?</h2>
-            <img src="images/fst.webp" alt="questions-image">
+        <button class="test__btn-next">Следующий вопрос</button>
+        <div class="questions__elem">
+            <div class="questions__top">
+                <h2 class="question__title">Кто изображён перед вами?</h2>
+                <img src="images/fst.webp" alt="questions-image">
+            </div>
+            <ul class="questions__list">
+                <li class="questions__item">
+                    <button>Филипп Киркоров</button>
+                </li>
+                <li class="questions__item">
+                    <button class="right-answer">Стив Джобс</button>
+                </li>
+                <li class="questions__item">
+                    <button>Зак Галифианакис</button>
+                </li>
+            </ul>
         </div>
-        <ul class="questions__list">
-            <li class="questions__item">
-                <button>Филипп Киркоров</button>
-            </li>
-            <li class="questions__item">
-                <button class="right-answer">Стив Джобс</button>
-            </li>
-            <li class="questions__item">
-                <button>Зак Галифианакис</button>
-            </li>
-        </ul>
+        <div class="questions__elem">
+            <div class="questions__top">
+                <h2 class="question__title">Как звали крылатого коня в древнегреческой мифологии?</h2>
+            </div>
+            <ul class="questions__list">
+                <li class="questions__item">
+                    <button>Папуас</button>
+                </li>
+                <li class="questions__item">
+                    <button class="right-answer">Пегас</button>
+                </li>
+                <li class="questions__item">
+                    <button>Ананас</button>
+                </li>
+            </ul>
+        </div>
         <div class="test__results">
             <div class="test__result-correct">Верные ответы: <span class="correct">0</span></div>
             <div class="test__result-incorrect">Неверные ответы: <span class="incorrect">0</span></div>
