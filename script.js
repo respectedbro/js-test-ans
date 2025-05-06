@@ -111,6 +111,10 @@ nextBtn.addEventListener('click', () => {
     questionElements[questionIndex].style.display = 'flex';
     questionsCountElement.textContent = questionIndex + 1;
     showElems(['questions']);
+
+    if (questionIndex === questionElements.length - 1) {
+      nextBtn.textContent = 'Посмотреть результаты';
+    }
   } else {
     showElems(['results', 'againBtn']);
   }
@@ -123,6 +127,7 @@ againBtn.addEventListener('click', () => {
   correctAnswerElement.textContent = '0';
   incorrectAnswerElement.textContent = '0';
   answerSelected = false;
+  nextBtn.textContent = 'Следующий вопрос';
 
   questionElements.forEach(question => {
     question.style.display = 'none';
