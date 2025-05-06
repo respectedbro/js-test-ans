@@ -18,7 +18,7 @@
 
     <div class="test__questions">
         <div class="questions__counter">
-            <span class="questions__count">0</span>/10
+            <span class="questions__count">0</span>/6
         </div>
         <button class="test__btn-next">Следующий вопрос</button>
         <div class="questions__elem">
@@ -54,14 +54,53 @@
                 </li>
             </ul>
         </div>
-        <div class="test__results">
-            <div class="test__result-correct">Верные ответы: <span class="correct">0</span></div>
-            <div class="test__result-incorrect">Неверные ответы: <span class="incorrect">0</span></div>
+
+        <div class="questions__elem">
+            <div class="questions__top">
+                <h2 class="question__title">На берегах какой реки раскинулся город Будапешт, являющийся столицей
+                    Венгрии?</h2>
+            </div>
+            <ul class="questions__list">
+                <li class="questions__item">
+                    <button>Эльба</button>
+                </li>
+                <li class="questions__item">
+                    <button>Лаура</button>
+                </li>
+                <li class="questions__item">
+                    <button class="right-answer">Дунай</button>
+                </li>
+            </ul>
         </div>
+
+        <div class="questions__elem">
+            <div class="questions__top">
+                <h2 class="question__title">Сколько месяцев в году?</h2>
+            </div>
+            <input class="question__input" type="text" data-correct="12">
+        </div>
+
+        <div class="questions__elem">
+            <div class="questions__top">
+                <h2 class="question__title">Сколько дней в високосном году?</h2>
+            </div>
+            <input class="question__input" type="text" data-correct="366">
+        </div>
+
+        <div class="questions__elem">
+            <div class="questions__top">
+                <h2 class="question__title">Самое большое млекопитающее на земле?</h2>
+            </div>
+            <input class="question__input" type="text" data-correct="Слон">
+        </div>
+
     </div>
-
+    <div class="test__results">
+        <div class="test__result-correct">Верные ответы: <span class="correct">0</span></div>
+        <div class="test__result-incorrect">Неверные ответы: <span class="incorrect">0</span></div>
+    </div>
+    <button class="again">Пройти тест ещё раз</button>
 </div>
-
 
 </body>
 </html>
